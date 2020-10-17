@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
@@ -37,22 +38,24 @@ public class doudizhi {
                 dipai.add(arrayList.get(i));
             }
         }
-        System.out.println(person1);
-        System.out.println(person2);
-        System.out.println(person3);
-        System.out.println(dipai);
+        String dehua = "德华";
+        String chaowei = "朝伟";
+        String runfa = "润发";
+        System.out.println(dehua +":"+ person1);
+        System.out.println(chaowei +":"+ person2);
+        System.out.println(runfa +":"+ person3);
+        System.out.println("底牌是："+ dipai);
         int dizhu = new Random().nextInt(3);
-        System.out.println(dizhu);
         System.out.print("首先叫牌的人是： ");
         switch (dizhu){
             case 0:
-                System.out.print("person1");
+                System.out.print(dehua);
                 break;
             case 1:
-                System.out.print("person2");
+                System.out.print(chaowei);
                 break;
             case 2:
-                System.out.print("person3");
+                System.out.print(runfa);
                 break;
 
         }
